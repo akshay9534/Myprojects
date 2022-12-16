@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<style>
+body {  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("image.jpg");    
+}
+</style>
+
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand">Student Registration Form</a>
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<form  action="insert.jsp" method="post" class="mb-3 row">
+<div class="col-md-6">
+    <label for="inputEmail4" class="form-label"><h6>Regno:</h6></label>
+    <input type="number" class="form-control" id="regno" 
+     name="regno">
+  </div>
+
+ <div class="col-md-6">
+    <label for="inputEmail4" class="form-label"><h6>Name:</h6></label>
+    <input type="text" class="form-control" id="name" name="name">
+  </div>
+  
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label"><h6>Email:</h6></label>
+    <input type="email" class="form-control" id="email" name="email">
+  </div>
+  
+  <div class="col-12">
+    <label for="inputAddress" class="form-label"><h6>Address:</h6></label>
+    <input type="text" class="form-control" id="address" placeholder="1234 Main St" name="address">
+  </div>
+  
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label"><h6>City:</h6></label>
+    <input type="text" class="form-control" id="inputCity" name="city">
+  </div>
+  <div class="col-md-4">
+    <label for="inputState" class="form-label"><h6>State:</h6></label>
+    <select id="inputState" class="form-select" name="state">
+      <option selected>Maharastara</option>
+      <option>...</option>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="inputZip" class="form-label"><h6>Zip code:</h6></label>
+    <input type="number" class="form-control" id="Zip" name="zipcode">
+  </div>
+ 
+  </div>
+  <div class="col-12">
+  <button type="submit" class="btn btn-dark">Register</button>
+  </div>
+</form><br>
+
+<a href="view.jsp"><button type="submit" class="btn btn-success "  >View</button></a>
+
+</body>
+</html>
